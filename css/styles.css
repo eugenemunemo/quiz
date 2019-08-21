@@ -1,2 +1,6 @@
 .submit{background-color: red
 }
+
+.background{background-image: url("../images/abstract-paint-canvas_53876-88902\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;}

@@ -33,7 +33,7 @@
   
    <title>My Quiz app</title>
 </head>
-<body>
+<body id="background">
 
 
 
@@ -69,7 +69,7 @@ $exam[] = [
 $exam[] = [
    'question' => 'What is it that lives if it is fed, and dies if you give it a drink?',
    'answer' => [
-       'man',
+       'man' ,
        'maize',
        'Fire',
        'delta'
@@ -322,38 +322,41 @@ if(isset($_POST['submit'])){
             echo "<p>"."Your score is ".$score. " / 20"."</p>";
             if($score === 20){
                echo "excellent, awesome";
-               $image = ".jpg";
+               $image = "3e_1048-13d-medical-technology-design-male-figure-with-brain-highlight_1048-10787.jpg";
             }
-            } 
+             
            elseif ($score >=0 && $score < 10) {
             echo "<h1> Poor! </h1>";
-            $image = "morning.jpg";
+            $image = "image-human-brain_99433-298.jpg";
            echo "<br><img src=\" img/$image \" >";
-            } else if ($score >=10 && $score <= 14) {
-           echo "<h1> Good your are above average! </h1>";
-            $image = "afternoon.jpg";
-            echo "<br><img src=\" img/$image \" >";
-           } else {
-           echo "<h1> you are among masters! </h1>";
-           $image = "evening.jpg";
+            }
+         }
+            
+           // else if ($score >=10 && $score <= 14) {
+           //echo "<h1> Good, you are above average! </h1>";
+           // $image = "afternoon.jpg";
            // echo "<br><img src=\" img/$image \" >";
-         //}//
+           //} else {
+          // echo "<h1> you are among masters! </h1>";
+          // $image = "evening.jpg";
+           // echo "<br><img src=\" img/$image \" >";
+        // }
+      //}
 
-
-            ?>
+?>
             <input id="submit" type="submit" name="submit">
             </div>
 
           
 
             <div class="panel panel-danger">
-               <div class="panel-heading">Panel with panel-danger class</div>
+               <div class="panel-heading">EVERYTHING IS NOT WHAT IT SEEMS</div> 
                <div class="panel-body"><?php include 'footer.php';?></div>
                 </div>
                </div>
                </div>
             </form>
-
+            <script src="footer.php"> </script>
            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
               integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
               crossorigin="anonymous"></script>
@@ -365,5 +368,7 @@ if(isset($_POST['submit'])){
            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
               integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
                crossorigin="anonymous"></script>
+           
+           
             </body>
             </html>
