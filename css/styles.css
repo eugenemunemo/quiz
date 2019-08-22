@@ -76,3 +76,9 @@
     border-radius: 0;
     transition: .2s;
   }
+
+    .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
