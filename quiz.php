@@ -307,56 +307,60 @@ $Questions = array(
                                 'D'=> 'he himself'
                             ),
                             'CorrectAnswer' => 'C'    
-    )
+                          ),
 );
 
 if (isset($_POST['answers'])){
-    $Answers = $_POST['answers']; // Get submitted answers.
+  $Answers = $_POST['answers']; // Get submitted answers.
 
-    // Now this is fun, automated question checking! ;)
+  // Now this is fun, automated question checking! ;)
 
-    foreach ($Questions as $QuestionNo => $Value){
-        // Echo the question
-        echo $Value['Question'].'<br />';
+  foreach ($Questions as $QuestionNo => $Value){
+      // Echo the question
+      echo $Value['Question'].'<br />';
 
-        if ($Answers[$QuestionNo] != $Value['CorrectAnswer']){
-            echo '<span style="color: red;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span>'; // Replace style with a class
-        } else {
-            echo '<span style="color: green;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span>'; // Replace style with a class
-        }
-        echo '<br /><hr>';
-    }
-} else {
+      if ($Answers[$QuestionNo] != $Value['CorrectAnswer']){
+           echo 'You answered: <span style="color: red;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span><br>'; // Replace style with a class
+           echo 'Correct answer: <span style="color: green;">'.$Value['Answers'][$Value['CorrectAnswer']].'</span>';
+      } else {
+          echo 'Correct answer: <span style="color: green;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span><br>'; // Replace style with a class
+          echo 'You are correct: <span style="color: green;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span>'; $counter++;
+
+      }
+
+      echo '<br /><hr>'; 
+                              if ($counter=="") 
+                              { 
+                              $counter='0';
+                              $results = "Your score: $counter/2"; 
+                              }
+                              else 
+                              { 
+                              $results = "Your score: $counter/2"; 
+                              }
+                             }                           echo $results;
+                                } else {  
 ?>
-    <form action="grade.php" method="post" id="quiz">
-    <?php foreach ($Questions as $QuestionNo => $Value){ ?>
-    <li>
-        <h3><?php echo $Value['Question']; ?></h3>
-        <?php 
-            foreach ($Value['Answers'] as $Letter => $Answer){ 
-            $Label = 'question-'.$QuestionNo.'-answers-'.$Letter;
-        ?>
-        <div>
-            <input type="radio" name="answers[<?php echo $QuestionNo; ?>]" id="<?php echo $Label; ?>" value="<?php echo $Letter; ?>" />
-            <label for="<?php echo $Label; ?>"><?php echo $Letter; ?>) <?php echo $Answer; ?> </label>
-        </div>
-        <?php } ?>
-    </li>
-    <?php } ?>
-    </div>
-    <div class="container">
+  <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="quiz">
+  <?php foreach ($Questions as $QuestionNo => $Value){ ?>
 
-    <input id="txt.left"color="red" class="button" type="submit" value="Submit Quiz" />
+      <h3><?php echo $Value['Question']; ?></h3>
+      <?php 
+          foreach ($Value['Answers'] as $Letter => $Answer){ 
+          $Label = 'question-'.$QuestionNo.'-answers-'.$Letter;
+      ?>
+      <div>
+          <input type="radio" name="answers[<?php echo $QuestionNo; ?>]" id="<?php echo $Label; ?>" value="<?php echo $Letter; ?>" />
+          <label for="<?php echo $Label; ?>"><?php echo $Letter; ?>) <?php echo $Answer; ?> </label>
+      </div>
+      <?php } ?>
 
-   </div>
-</div>
-    
-    </form>
-
-    </div>
+ <?php } ?>
+  <input type="submit" value="Submit Quiz" />
+  </form>
 <?php 
 }
-?>   
+?>
 
     
     
