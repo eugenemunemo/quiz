@@ -109,12 +109,12 @@ $Questions = array(
 
 
     3 => array(
-            'Question' => '03.What is always coming, but never arrives',
+            'Question' => '03.What is always there,at day and night',
             'Answers' => array(
-                'A' => 'truth',
-                'B' => 'rare wind',
-                'C' => 'javascript',
-                'D'=> 'tomorrow'
+                'A' => 'the sun at night and shines through the moon',
+                'B' => 'Julius Malema',
+                'C' => 'coffee',
+                'D'=> 'petrol'
     
             ),
             'CorrectAnswer' => 'A'
