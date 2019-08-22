@@ -1,1 +1,1 @@
-# quiz
+# the queiz which is the form of a website, creating questions in a variable and populate the empty form with the neccessary results.should be written in PHP and not in JavaScript
