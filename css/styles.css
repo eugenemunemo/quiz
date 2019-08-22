@@ -1,6 +1,9 @@
 .submit{background-color: red
 }
 
-.background{background-image: url("../images/abstract-paint-canvas_53876-88902\ \(1\).jpg");
-    background-size: cover;
-    background-position: center;}
+body{
+    background: url("../images/abstract-art-colorful-bright-ink-watercolor-textures-white-paper-background_1150-6597.jpg");
+    /* background-image: url("../images/abstract-art-colorful-bright-ink-watercolor-textures-white-paper-background_1150-6597.jpg"); */
+    /* background-size: cover; */
+    /* background-position: center;} */
+}
