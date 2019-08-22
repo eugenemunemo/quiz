@@ -89,3 +89,9 @@
     text-align: center;
     font-size: 30px;
   }
+   .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+
+
+
