@@ -1,14 +1,16 @@
 
 One Paragraph of project description goes here
 
- the queiz which is the form of a website, creating questions in a variable and populate the empty form with the neccessary results.should be written in PHP and not in JavaScript# Project Title
+ the quiz which is the form of a website, creating questions in a variable and populate the empty form with the neccessary results.should be written in PHP and not in JavaScript# Project Title
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-
+you need to have notepad+++, visual studio you can get it on github its on public
 ### Prerequisites
 What things you need to install the software and how to install them
 Give examples
+github
+visual studio or notepad++
+google chrome
 
 
 ### Installing
@@ -62,3 +64,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Inspiration
 * etc
 ww3schools
+inspired by
+Iver Saladaga Anoos

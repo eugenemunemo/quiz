@@ -8,8 +8,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i%7CPlayfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
  <!-- Bootstrap CSS File -->
- <!--<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
- <! Libraries CSS Files -->
+ <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <!-- Libraries CSS Files -->
  <!--<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -18,7 +18,7 @@
  <link href="css/styles.css" rel="stylesheet">
 
    <title>SENSE OF HUMOUR QUIZ</title>
- <head> 
+ <head> zz
  
  
  <body class="w3-black" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -78,293 +78,292 @@
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">My Test</h2>
+    <h1 class="w3-text-light-grey">My Test</h1>
     <hr style="width:200px" class="w3-opacity">
-    
-<?php 
+ <div class ='radioclass'>
 
-$Questions = array(
-    1 => array(
-        'Question' => '01.What is always coming, but never arrives',
-        'Answers' => array(
-            'A' => 'truth',
-            'B' => 'rare wind',
-            'C' => 'javascript',
-            'D'=> 'tomorrow'
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+<div class="app">
+<h2>Welcome to my quiz</h2>
 
-        ),
-        'CorrectAnswer' => 'D'
-    ),
-    2 => array(
-        'Question' => '02.What can be broken, but is never held',
-        'Answers' => array(
-            'A' => 'virginity',
-            'B' => 'A promise',
-            'C' => 'messages',
-            'D'=> 'heart'
-        ),
-        'CorrectAnswer' => 'B'
-    
-        ),
+<?php
+$quiz[] = [
+   'question' => 'What is always coming, but never arrives',
+   'answer' => [
+       'truth',
+       'rare wind',
+       'javascript',
+       'tomorrow'
+   ]
+];
+$quiz[] = [
+   'question' => 'Against which illness do you use insuline',
+   'answer' => [
+       'high_blood_pressure',
+       'adiposity',
+       'diabetes',
+       'cardiac_infection'
+   ]
+];
+$quiz[] = [
+   'question' => 'what is the biggest city in USA according to the mass of metropolitan area?',
+   'answer' => [
+       'Los Angeles',  
+       'New york',  
+       'chicago', 
+       'san diego'
+   ]
+];
+$quiz[] = [
+   'question' => 'which word does the "e" in e-mail stand for?',
+   'answer' => [
+       'explain',
+       'electronic',
+       'execute',
+       'exact'
+       ]
+   ];
+$quiz[] = [
+   'question' => 'how much % of the world is covered with water?',
+   'answer' => [
+       '92%',
+       '63%',
+       '37%',
+       '71%'
+   ]
+];
+$quiz[] = [
+   'question' => 'which is the longest river in the world' ,
+   'answer' => [
+       'nil',
+       'congo',
+       'mississipi',
+       'amazon'
+   ]
+];
+$quiz[] = [
+   'question' => 'how many teeth does an adult human usualy have?' ,
+   'answer' => [
+       '12-16',
+       '28-32',
+       '16-24',
+       '32-36'
+   ]
+];
+$quiz[] = [
+   'question' => 'who developed the theory of evolution?' ,
+   'answer' => [
+       'Isaac Newton',
+       'Chareles Darwin',
+       'Pythagore',
+       'Davinci'
+   ]
+];
+$quiz[] = [
+   'question' => 'which one of this animal is a fish?' ,
+   'answer' => [
+       'Shark',
+       'Whale',
+       'Dolphin',
+       'Seal'
+   ]
+];
+$quiz[] = [
+   'question' => 'which one of these numbers is without rest dividable through the numbers : 1,2,3,4,5,6?' ,
+   'answer' => [
+       '42',
+       '40',
+       '60',
+       '128'
+   ]
+];
 
+$quiz[] = [
+  'question' => 'What is always coming, but never arrives',
+  'answer' => [
+      'elephant',
+      'blue_whale',
+      'giraffe',
+      'buffalo'
+  ]
+];
+$quiz[] = [
+  'question' => 'Against which illness do you use insuline',
+  'answer' => [
+      'high_blood_pressure',
+      'adiposity',
+      'diabetes',
+      'cardiac_infection'
+  ]
+];
+$quiz[] = [
+  'question' => 'what is the biggest city in USA according to the mass of metropolitan area?',
+  'answer' => [
+      'Los Angeles',  
+      'New york',  
+      'chicago', 
+      'san diego'
+  ]
+];
+$quiz[] = [
+  'question' => 'which word does the "e" in e-mail stand for?',
+  'answer' => [
+      'explain',
+      'electronic',
+      'execute',
+      'exact'
+      ]
+  ];
+$quiz[] = [
+  'question' => 'how much % of the world is covered with water?',
+  'answer' => [
+      '92%',
+      '63%',
+      '37%',
+      '71%'
+  ]
+];
+$quiz[] = [
+  'question' => 'which is the longest river in the world' ,
+  'answer' => [
+      'nil',
+      'congo',
+      'mississipi',
+      'amazon'
+  ]
+];
+$quiz[] = [
+  'question' => 'how many teeth does an adult human usualy have?' ,
+  'answer' => [
+      '12-16',
+      '28-32',
+      '16-24',
+      '32-36'
+  ]
+];
+$quiz[] = [
+  'question' => 'who developed the theory of evolution?' ,
+  'answer' => [
+      'Isaac Newton',
+      'Chareles Darwin',
+      'Pythagore',
+      'Davinci'
+  ]
+];
+$quiz[] = [
+  'question' => 'which one of this animal is a fish?' ,
+  'answer' => [
+      'Shark',
+      'Whale',
+      'Dolphin',
+      'Seal'
+  ]
+];
+$quiz[] = [
+  'question' => 'which one of these numbers is without rest dividable through the numbers : 1,2,3,4,5,6?' ,
+  'answer' => [
+      '42',  
+      '40', 
+      '60',  
+      '128' 
+  ]
+];
 
-    3 => array(
-            'Question' => '03.What is always there,at day and night',
-            'Answers' => array(
-                'A' => 'the sun at night and shines through the moon',
-                'B' => 'Julius Malema',
-                'C' => 'coffee',
-                'D'=> 'petrol'
-    
-            ),
-            'CorrectAnswer' => 'A'
-        ),
-    4 => array(
-            'Question' => '04.What is it that lives if it is fed, and dies if you give it a drink?',
-            'Answers' => array(
-                'A' => 'man because unfaithfull as their options',
-                'B' => 'delta',
-                'C' => 'Fire',
-                'D'=> 'maize'
-            ),
-            'CorrectAnswer' => 'C'
-        ),
+$answerName = array('question1','question2','question3','question4','question5','question6','question7','question8','question9','question10','question11','question12','question13','question14','question15','question16','question17','question18','question19','question20');
+$number = array('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20');
 
-    5 => array(
-        'Question' => '05.What is it that if you have, you want to share with me, and if you share, you do not have?',
-        'Answers' => array(
-            'A' => 'A secret',
-            'B' => 'rare wind',
-            'C' => 'javascript',
-            'D'=> 'congo dust'
+for($i = 0; $i < count($quiz); ++$i){
+   $outputquestion = "<h3>".$number[$i].')'.$quiz[$i]['question']."</h3>";
+   echo $outputquestion;
+   foreach($quiz[$i]['answer'] as $value ){
+       $outputanswer =  "<input required type=\"radio\" name=".$answerName[$i]."
+       value=".$value.">"."<span>$value</span>";
+       echo $outputanswer;
+       }
+}
+if(isset($_POST['submit'])){
+$score = 0;
+if($_POST['question1'] == 'blue_whale' ){
+$score++;
+}
+if($_POST['question2'] == 'diabetes' ){
+$score++;
+}
+if($_POST['question3'] == 'New_york' ){
+$score++;
+}
+if($_POST['question4'] == 'electronic' ){
+   $score++;
+}
+if($_POST['question5'] == '71%'){
+   $score++;
+}
+if($_POST['question6'] == 'amazon'){
+   $score++;
+}
+if($_POST['question7'] == '28-32'){
+   $score++;
+}
+if($_POST['question8'] == 'Chareles Darwin'){
+   $score++;
+}
+if($_POST['question9'] == 'Shark'){
+   $score++;
+}
+if($_POST['question10'] == '60'){
+   $score++;
+}
+if($_POST['question1'] == 'blue_whale' ){
+  $score++;
+ }
+  if($_POST['question2'] == 'diabetes' ){
+  $score++;
+}
+if($_POST['question3'] == 'New_york' ){
+  $score++;
+}
+if($_POST['question4'] == 'electronic' ){
+   $score++;
+  }
+if($_POST['question5'] == '71%'){
+   $score++;
+}
+if($_POST['question6'] == 'amazon'){
+   $score++;
+}
+if($_POST['question7'] == '28-32'){
+     $score++;
+ }
+if($_POST['question8'] == 'Chareles Darwin'){
+     $score++;
+}
+if($_POST['question9'] == 'Shark'){
+     $score++;
+}
+if($_POST['question10'] == '60'){
+     $score++;
+}
 
-        ),
-        'CorrectAnswer' => 'A'
-    ),
-    6 => array(
-        'Question' => '06.If a plane crashes on the border between the United States and Canada, where do they bury the survivors',
-        'Answers' => array(
-            'A' => 'United States of canada',
-            'B' => 'immigration',
-            'C' => 'Survivors are not buried',
-            'D'=> 'export'
-        ),
-        'CorrectAnswer' => 'C'
-    ),    
-
-    7 => array(
-            'Question' => '07.If it takes eight men ten hours to build a wall, how long would it take four men?',
-            'Answers' => array(
-                'A' => 'No time, because the wall is already built.',
-                'B' => 'simultaneous equation to calculated',
-                'C' => '20 hours',
-                'D'=> 'mutiply the number of man then divide by 8'
-    
-            ),
-            'CorrectAnswer' => 'A'
-        ),
-    8 => array(
-            'Question' => '08.If you have a bowl with six apples and you take away four, how many do you have?',
-            'Answers' => array(
-                'A' => 'none',
-                'B' => 'the bowl',
-                'C' => 'The 4 you took away',
-                'D'=> 'magic'
-            ),
-            'CorrectAnswer' => 'C'
-        ),
-    9 => array(
-                'Question' => '09.If you had only one match and entered a dark room containing an oil lamp,   
-                some kindling wood, and a newspaper, which would you light first?',
-                'Answers' => array(
-                    'A' => 'The match',
-                    'B' => 'newspaper',
-                    'C' => 'wood',
-                    'D'=> 'The light'
-        
-                ),
-                'CorrectAnswer' => 'A'
-            ),
-    10 => array(
-                'Question' => '10.If you spell “sit in the tub” s-o-a-k, and you spell “a funny story” j-o-k-e, how do you spell “the white of an egg”?',
-                'Answers' => array(
-                    'A' => 'First answer of Second question',
-                    'B' => 'Second answer Second question',
-                    'C' => 'Third answer Second question',
-                    'D'=> 'Crazy Solid Shapes'
-                ),
-                'CorrectAnswer' => 'C'
-            ),        
-    11 => array(
-                    'Question' => '11.What is always coming, but never arrives',
-                    'Answers' => array(
-                        'A' => 'a-l-b-u-m-e-n or e-g-g w-h-i-t-e',
-                        'B' => 'whiteish',
-                        'C' => 'white',
-                        'D'=> 'embryo'
-            
-                    ),
-                    'CorrectAnswer' => 'A'
-                ),
-    12 => array(
-                    'Question' => '12.Is it legal for a man to marry his widow’s sister?',
-                    'Answers' => array(
-                        'A' => 'First answer of Second question',
-                        'B' => 'as long as she is with him',
-                        'C' => 'No, but since he is dead it would be hard to do so',
-                        'D'=> 'if she allows'
-                    ),
-                    'CorrectAnswer' => 'C'
-                ),    
-            
-    13 => array(
-                        'Question' => '13.How did the boy kick his soccer ball ten feet, and then have it come back to him on its own?',
-                        'Answers' => array(
-                            'A' => 'He kicked it up',
-                            'B' => 'triumphantly',
-                            'C' => 'from a machine',
-                            'D'=> 'tomorrow'
-                
-                        ),
-                        'CorrectAnswer' => 'A'
-                    ),
-    14 => array(
-                        'Question' => '14.If Mrs. John’s bungalow is decorated completely in pink, with the walls, carpet, and furniture all shades of pink, what color are the stairs?',
-                        'Answers' => array(
-                            'A' => 'wooden',
-                            'B' => 'Second answer Second question',
-                            'C' => 'There are no stairs, because bungalows do not have a second floor',
-                            'D'=> 'none of the above'
-                        ),
-                        'CorrectAnswer' => 'C'
-                    ),
-            
-    15 => array(
-                    'Question' => '15.How could a man go outside in the pouring rain without protection, and not have a hair on his head get wet',
-                    'Answers' => array(
-                        'A' => 'He was bald',
-                        'B' => 'his twin went outside',
-                        'C' => 'wearing a woolen hat',
-                        'D'=> 'playing on top of the pool'
-            
-                    ),
-                    'CorrectAnswer' => 'A'
-                ),
-
-    16 => array(
-                    'Question' => '16.If an electric train is moving north at 100mph and a wind is blowing to the west at 10mph, which way does the smoke blow?',
-                    'Answers' => array(
-                        'A' => 'north',
-                        'B' => 'both C & D',
-                        'C' => 'An electric train has no smoke',
-                        'D'=> 'west'
-                    ),
-                    'CorrectAnswer' => 'C'
-                ),    
-            
-    17 => array(
-                        'Question' => '17.How was it possible that every single person in an airplane crash died, but two people survived?',
-                        'Answers' => array(
-                            'A' => 'The two survivors were married',
-                            'B' => 'they divorced',
-                            'C' => 'everyone died',
-                            'D'=> 'there were from a household'
-                
-                        ),
-                        'CorrectAnswer' => 'A'
-                    ),
-
-
-    18 => array(
-                        'Question' => '18.What breaks and never falls, and what falls and never breaks?',
-                        'Answers' => array(
-                            'A' => 'caterpiller',
-                            'B' => 'Second answer Second question',
-                            'C' => 'Day breaks and night falls',
-                            'D'=> ' the lizard'
-                            
-                        ),
-                        'CorrectAnswer' => 'C'
-                    ),    
-
-    19 => array(
-                            'Question' => '19.Some months have 31 days, others have 30 days, but how many have 28 days?',
-                            'Answers' => array(
-                                'A' => 'All the months have 28 days.',
-                                'B' => 'in the leap year',
-                                'C' => 'only february',
-                                'D'=> 'one'
-                    
-                            ),
-                            'CorrectAnswer' => 'A'
-                        ),
-    20 => array(
-                            'Question' => '20. The attorney is my brother,” testified the accountant. But the attorney testified he did not have a brother. Who is lying?',
-                            'Answers' => array(
-                                'A' => 'The attorney',
-                                'B' => 'Second answer Second question',
-                                'C' => 'Neither one, because the accountant was his sister.',
-                                'D'=> 'he himself'
-                            ),
-                            'CorrectAnswer' => 'C'    
-                          ),
-);
-
-if (isset($_POST['answers'])){
-  $Answers = $_POST['answers']; // Get submitted answers.
-
-  // Now this is fun, automated question checking! ;)
-
-  foreach ($Questions as $QuestionNo => $Value){
-      // Echo the question
-      echo $Value['Question'].'<br />';
-
-      if ($Answers[$QuestionNo] != $Value['CorrectAnswer']){
-           echo 'You answered: <span style="color: red;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span><br>'; // Replace style with a class
-           echo 'Correct answer: <span style="color: green;">'.$Value['Answers'][$Value['CorrectAnswer']].'</span>';
-      } else {
-          echo 'Correct answer: <span style="color: green;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span><br>'; // Replace style with a class
-          echo 'You are correct: <span style="color: green;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span>'; $counter++;
-
-      }
-
-      echo '<br /><hr>'; 
-                              if ($counter=="") 
-                              { 
-                              $counter='0';
-                              $results = "Your score: $counter/2"; 
-                              }
-                              else 
-                              { 
-                              $results = "Your score: $counter/2"; 
-                              }
-                             }                           echo $results;
-                                } else {  
-?>
-  <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="quiz">
-  <?php foreach ($Questions as $QuestionNo => $Value){ ?>
-
-      <h3><?php echo $Value['Question']; ?></h3>
-      <?php 
-          foreach ($Value['Answers'] as $Letter => $Answer){ 
-          $Label = 'question-'.$QuestionNo.'-answers-'.$Letter;
-      ?>
-      <div>
-          <input type="radio" name="answers[<?php echo $QuestionNo; ?>]" id="<?php echo $Label; ?>" value="<?php echo $Letter; ?>" />
-          <label for="<?php echo $Label; ?>"><?php echo $Letter; ?>) <?php echo $Answer; ?> </label>
-      </div>
-      <?php } ?>
-
- <?php } ?>
-  <input type="submit" value="Submit Quiz" />
-  </form>
-<?php 
+echo "<p>"."Your score is ".$score. " / 20"."</p>";
+if($score === 20){
+   echo "well done";
+}
+if($score <= 10){
+  echo "<p>". "you failed"."</p>";
+}else{
+  echo "<p>". "you passed the test". "</p>";
+}
 }
 ?>
 
+
+</div>
+<input type="submit" name="submit">
+</div>
+</form>
     
     
-    
+</div>   
     
 
 
@@ -424,9 +423,9 @@ if (isset($_POST['answers'])){
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> CAPE TOWN, SA</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +27619125338</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: emunemo@gmail.com</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
     </div><br>
     <p>Lets get in touch. Send me a message:</p>
 
@@ -479,3 +478,4 @@ if (isset($_POST['answers'])){
            
         </body>
 </html>
+  
